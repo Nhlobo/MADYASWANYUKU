@@ -14,16 +14,24 @@
             box-sizing: border-box;
         }
 
+        /* Full Body and Gradient Application */
         body {
             background: radial-gradient(ellipse at center, #FFCC00 30%, #002FA7 70%); /* Gradient with yellow center and blue edges */
-            height: 100vh;
-            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
             font-family: Arial, sans-serif;
+            color: white; /* Set white text color for readability */
+        }
+
+        /* Apply gradient background to every section to ensure it flows across */
+        header, .hero, .overview, .service-images, .contact-info, footer {
+            background: inherit; /* Use inherited background from body */
         }
 
         /* Header Section */
         header {
-            background-color: #2c3e50;
+            background-color: rgba(44, 62, 80, 0.8); /* Transparent background with dark shade */
             padding: 20px;
             color: white;
         }
@@ -98,12 +106,12 @@
             padding: 50px 20px;
             background-color: #ffffff;
             text-align: center;
+            color: #2c3e50; /* Dark text for readability */
         }
 
         .overview h2 {
             font-size: 36px;
             margin-bottom: 20px;
-            color: #2c3e50;
         }
 
         .overview ul {
@@ -183,7 +191,7 @@
 
         /* Footer Section */
         footer {
-            background-color: #34495e;
+            background-color: rgba(52, 73, 94, 0.9); /* Dark footer with slight transparency */
             color: white;
             text-align: center;
             padding: 20px;
