@@ -6,22 +6,59 @@
     <title>Madya Swa Nyuku Business Services - Professional Pest Control</title>
     <meta name="description" content="Madya Swa Nyuku Business Services (Pty) Ltd specializes in eco-friendly, professional pest control services, including termite, rodent, bed bug, and more.">
     <meta name="keywords" content="pest control, termite removal, rodent control, bed bugs, eco-friendly pest control, Madya Swa Nyuku">
-    
+
     <style>
+        /* Gradient Background for the entire website */
         body {
-            background-image: url('images/background.jpg'); /* Path to your background image */
+            background: linear-gradient(to bottom, darkblue, yellow); /* Vertical gradient from dark blue to yellow */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background image only on the homepage */
+        body.homepage {
+            background-image: url('images/background.jpg'); /* Replace with the path to your image */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            color: white; /* Optional: Adjust text color for readability */
         }
 
+        /* General body styling */
+        body {
+            color: white; /* Text color for readability */
+        }
+
+        /* Header Section */
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for header */
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text contrast */
+        }
+
+        .cta-btn {
+            background-color: yellow;
+            color: darkblue;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Pest Control Demo Section */
         .pest-control-demo {
             background-color: #f9f9f9;
             padding: 40px 20px;
             text-align: center;
         }
 
+        /* Video container */
         .video-container {
             margin: 20px 0;
         }
@@ -31,7 +68,7 @@
             height: auto;
         }
 
-        .pest-control-demo h2 {
+        .pest-control-demo h2, .pest-control-demo h3 {
             font-size: 2em;
             margin-bottom: 20px;
         }
@@ -42,7 +79,7 @@
         }
     </style>
 </head>
-<body>
+<body class="homepage"> <!-- Add "homepage" class to the body tag for homepage-specific styling -->
 
 <!-- Header Section -->
 <header>
