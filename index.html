@@ -14,19 +14,26 @@
             box-sizing: border-box;
         }
 
-        /* Full Body and Gradient Application */
+        /* Body Section - Set Background Color to White */
         body {
-            background: radial-gradient(ellipse at center, #FFCC00 30%, #002FA7 70%); /* Gradient with yellow center and blue edges */
+            background-color: #ffffff; /* Set background to white */
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             font-family: Arial, sans-serif;
-            color: white; /* Set white text color for readability */
+            color: black; /* Set text color to black for readability */
         }
 
-        /* Apply gradient background to every section to ensure it flows across */
-        header, .hero, .overview, .service-images, .contact-info, footer {
-            background: inherit; /* Use inherited background from body */
+        /* Apply background image only to specific sections */
+        .hero {
+            background: url('images/homepage-bg.jpg') no-repeat center center/cover; /* Add your image here */
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+
+        header, .overview, .service-images, .contact-info, footer {
+            background: inherit; /* Inherit background from body */
         }
 
         /* Header Section */
@@ -66,13 +73,6 @@
         }
 
         /* Hero Section */
-        .hero {
-            background: url('images/hero-bg.jpg') no-repeat center center/cover;
-            text-align: center;
-            padding: 80px 20px;
-            color: white;
-        }
-
         .hero h1 {
             font-size: 48px;
             margin-bottom: 20px;
