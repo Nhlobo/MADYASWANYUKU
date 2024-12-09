@@ -13,8 +13,9 @@ a {
 }
 
 header {
-    background-color: #2c3e50;
+    background: linear-gradient(to right, #3498db, #1abc9c); /* Blue Gradient */
     padding: 10px 20px;
+    position: relative;
 }
 
 header .logo {
@@ -47,9 +48,10 @@ header nav ul li a:hover {
 /* Hero Section */
 .hero {
     text-align: center;
-    background-color: #3498db;
+    background: linear-gradient(to right, #3498db, #1abc9c); /* Blue Gradient */
     padding: 50px 0;
     color: white;
+    position: relative;
 }
 
 .hero h1 {
@@ -66,7 +68,7 @@ header nav ul li a:hover {
 }
 
 .cta-btn {
-    background-color: #e74c3c;
+    background-color: #f39c12; /* Yellow accent */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -75,7 +77,51 @@ header nav ul li a:hover {
 }
 
 .cta-btn:hover {
-    background-color: #c0392b;
+    background-color: #e67e22;
+}
+
+/* Overview Section */
+.overview {
+    background-color: #ecf0f1;
+    padding: 40px;
+    text-align: center;
+}
+
+.overview h2 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.overview p {
+    font-size: 18px;
+}
+
+.overview a {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Contact Info Section */
+.contact-info {
+    background-color: #3498db;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 18px;
+}
+
+.contact-info .cta-btn {
+    background-color: #f39c12;
+    margin-top: 20px;
 }
 
 /* Footer Section */
@@ -136,7 +182,7 @@ footer p {
 
 .contact-form button {
     padding: 12px;
-    background-color: #3498db;
+    background-color: #3498db; /* Blue for button */
     color: white;
     border: none;
     border-radius: 5px;
@@ -144,4 +190,14 @@ footer p {
 
 .contact-form button:hover {
     background-color: #2980b9;
+}
+
+/* Vertical Yellow Accent */
+.vertical-yellow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    width: 8px;
+    background-color: #f39c12;
 }
