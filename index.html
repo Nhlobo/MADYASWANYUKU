@@ -6,13 +6,109 @@
     <title>Madya Swa Nyuku Business Services - Professional Pest Control</title>
     <meta name="description" content="Madya Swa Nyuku Business Services (Pty) Ltd specializes in eco-friendly, professional pest control services, including termite, rodent, bed bug, and more.">
     <meta name="keywords" content="pest control, termite removal, rodent control, bed bugs, eco-friendly pest control, Madya Swa Nyuku">
+    <style>
+        /* Adding background image */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .hero {
+            background-image: url('images/pest-control-background.jpg'); /* Replace with your own image */
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .cta-buttons {
+            margin-top: 20px;
+        }
+
+        .cta-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .cta-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .testimonial {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .testimonial img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+        }
+
+        .testimonial blockquote {
+            font-style: italic;
+            max-width: 600px;
+            margin: 0;
+        }
+
+        .service-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .service-image {
+            text-align: center;
+        }
+
+        .service-image img {
+            width: 100%;
+            border-radius: 8px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
 <!-- Header Section -->
 <header>
     <nav>
-        <a href="index.html" class="logo">Madya Swa Nyuku Business Services</a>
+        <a href="index.html" class="logo" style="font-size: 24px; color: #007bff;">Madya Swa Nyuku Business Services</a>
         <ul>
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Our Services</a></li>
@@ -22,7 +118,7 @@
     </nav>
 </header>
 
-<!-- Hero Section -->
+<!-- Hero Section with Background Image -->
 <main>
     <section class="hero">
         <h1>Leading Eco-Friendly Pest Control Solutions</h1>
@@ -31,6 +127,15 @@
             <a href="contact.html" class="cta-btn">Request a Quote</a>
             <a href="services.html" class="cta-btn">Explore Our Services</a>
         </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <img src="images/weed-control.jpg" alt="Effective Weed Control">
+        <blockquote>
+            <p>"Madya Swa Nyuku's team did an incredible job with our garden. The weed control service was efficient and long-lasting. We saw immediate results and no more weeds. Highly recommended!"</p>
+            <footer>- Sarah J., Homeowner</footer>
+        </blockquote>
     </section>
 
     <!-- Our Services Overview -->
@@ -50,7 +155,6 @@
 
     <!-- Featured Services Images -->
     <section class="service-images">
-        <h2>Our Solutions in Action</h2>
         <div class="service-image">
             <img src="images/weeds.jpg" alt="Weeds Control">
             <p>Effective Weed Control</p>
