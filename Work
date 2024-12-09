@@ -1,115 +1,64 @@
-I want all this in a the website 
-
-1. Home Page
-
-Clear Value Proposition: Highlight why the company stands out (e.g., eco-friendly solutions, experienced staff).
-
-Call to Action (CTA): Prominent buttons like "Request a Quote", "Contact Us", or "Schedule an Inspection".
-
-Contact Information: Visible phone number, email, and a "Chat Now" option.
-
-Brief Overview of Services: A summary with links to dedicated pages.
-
-
-2. Services Page
-
-Detailed List of Services: Cover common issues like termites, rodents, bed bugs, ants, etc.
-
-Descriptions: Explain the process for addressing each type of pest, benefits of the service, and any guarantees offered.
-
-Visuals: Photos or graphics to help customers identify their pest problems.
-
-
-3. About Us Page
-
-Company Background: Share the company’s history, mission, and core values.
-
-Team Introduction: Photos and bios of key team members to build trust.
-
-Certifications and Affiliations: Display licenses, certifications, and memberships in industry associations.
-
-
-4. Contact Page
-
-Contact Form: Fields for name, email, phone number, and inquiry details.
-
-Phone and Email: Easy-to-access information for immediate queries.
-
-Live Chat Option: For instant assistance.
-
-Google Maps Integration: Display office locations and service areas.
-
-
-5. Testimonials/Reviews
-
-Customer Reviews: Highlight positive feedback from satisfied customers.
-
-Before and After Images: Show the impact of the pest control solutions.
-
-
-6. Blog/Resources
-
-Educational Content: Tips on pest prevention, seasonal pest issues, or DIY insights.
-
-SEO Value: Helps attract organic traffic by addressing common pest-related questions.
-
-
-7. Pricing and Plans
-
-Transparent Pricing: Outline service costs or offer a starting price to set expectations.
-
-Packages: Show options for one-time treatments, recurring services, or comprehensive plans.
-
-Discounts and Promotions: Highlight any deals for new customers or referrals.
-
-
-8. Online Booking System
-
-Appointment Scheduling: Allow users to choose a date and time for inspections or services.
-
-Integration with Calendars: Sync options for reminders.
-
-
-9. Frequently Asked Questions (FAQ)
-
-Common Questions: Cover topics like service preparation, duration, effectiveness, safety measures, and follow-up services.
-
-
-10. Service Areas
-
-Coverage Map: Display the areas served by the company.
-
-Search Option: Allow users to check if their location is included.
-
-
-11. Legal and Safety Information
-
-Safety Policies: Details about eco-friendly products and their safety for pets and children.
-
-Licensing and Insurance: Proof of compliance with local regulations.
-
-Terms and Conditions: Outline service policies.
-
-
-12. Mobile-Friendly Design
-
-Ensure the site is fully responsive and loads quickly on all devices.
-
-
-13. Social Media Integration
-
-Links to Profiles: Encourage engagement on Facebook, Instagram, etc.
-
-Share Buttons: Allow users to share content or reviews.
-
-
-14. Analytics and Tracking
-
-Contact Tracking: Tools to measure conversion rates from the website.
-
-Feedback Forms: To gather customer opinions for improvement.
-
-
-15. Emergency Service Option
-
-24/7 Support: Highlight emergency pest control services, if available, with a dedicated CTA.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Madya Swa Nyuku Business Services (Pty) Ltd</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <nav>
+        <a href="index.html" class="logo">Madya Swa Nyuku Business Services</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content (Company Info, Team, and Certifications) -->
+<main>
+    <h1>About Us</h1>
+    <section>
+        <h2>Our Mission</h2>
+        <p>Madya Swa Nyuku Business Services (Pty) Ltd, established in 2014, is a registered pest control company offering eco-friendly and effective solutions for both residential and commercial clients. Our focus is on providing professional pest control services that ensure your home or business remains safe from harmful pests.</p>
+    </section>
+    <section>
+        <h2>Company Details</h2>
+        <p>Business Name: Madya Swa Nyuku Business Services (Pty) Ltd</p>
+        <p>Registration Number: CK 2014/035547/07</p>
+        <p>We are fully certified and licensed in pest control and adhere to the highest industry standards.</p>
+    </section>
+    <section>
+        <h2>Our Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="images/team1.jpg" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team2.jpg" alt="Jane Smith">
+                <h3>Jane Smith</h3>
+                <p>Lead Technician</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Certifications</h2>
+        <p>We are fully licensed and certified by the National Pest Management Association (NPMA) and other regulatory bodies, ensuring our work adheres to the highest standards.</p>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Madya Swa Nyuku Business Services (Pty) Ltd, CK 2014/035547/07. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
