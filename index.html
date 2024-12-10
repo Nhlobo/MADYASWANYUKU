@@ -10,11 +10,6 @@
     <meta property="og:description" content="We specialize in eco-friendly pest control services, including termite, rodent, bed bug, and more. Protect your home or business today with our professional team.">
     <meta property="og:image" content="images/logo.png">
     <meta property="og:url" content="https://www.madyswanpestcontrol.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Madya Swa Nyuku Business Services - Professional Eco-Friendly Pest Control">
-    <meta name="twitter:description" content="Protect your home or business from pests with eco-friendly solutions from Madya Swa Nyuku Business Services. We specialize in termite, rodent, bed bug, and more.">
-    <meta name="twitter:image" content="images/logo.png">
-    <meta property="og:image" content="images/logo.png">
     <style>
         * {
             margin: 0;
@@ -202,31 +197,6 @@
     }
 }
 
- 
-
-       .service-images {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 50px 20px;
-            background-color: #ecf0f1;
-            text-align: center;
-        }
-
-        .service-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-image p {
-            font-size: 18px;
-            margin-top: 10px;
-            color: #2c3e50;
-        }
-
-
          .contact-info {
         background: rgb(249, 250, 7);
         background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
@@ -373,6 +343,90 @@ footer .social-icons a:hover {
         <a href="services.html">Learn More About Our Services</a>
     </section>
 
+    <section class="service-images">
+    <h2>Our Solutions in Action</h2>
+
+    <div class="video-container" id="video1">
+        <video class="service-video" controls>
+            <source src="https://drive.google.com/uc?id=YOUR_FILE_ID_1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="service-description">Effective Weed Control</p>
+    </div>
+
+    <div class="video-container" id="video2">
+        <video class="service-video" controls>
+            <source src="https://drive.google.com/uc?id=YOUR_FILE_ID_1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="service-description">Comprehensive Ant Control</p>
+    </div>
+
+    <div class="video-container" id="video3">
+        <video class="service-video" controls>
+           <source src="https://drive.google.com/uc?id=YOUR_FILE_ID_1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="service-description">Cockroach Elimination Services</p>
+    </div>
+
+    <div class="video-container" id="video4">
+        <video class="service-video" controls>
+            <source src="https://drive.google.com/uc?id=YOUR_FILE_ID_1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="service-description">Complete Bed Bug Treatment</p>
+    </div>
+
+    <div class="video-container" id="video5">
+        <video class="service-video" controls>
+            <source src="https://drive.google.com/uc?id=YOUR_FILE_ID_1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="service-description">Termite Prevention & Elimination</p>
+    </div>
+
+    <div class="button-container">
+        <button class="nav-btn" onclick="previousVideo()">Previous</button>
+        <button class="nav-btn" onclick="nextVideo()">Next</button>
+    </div>
+</section>
+
+<script>
+    // Initially display the first video
+    let currentVideoIndex = 1;
+    const videos = document.querySelectorAll('.video-container');
+    function showVideo(index) {
+        videos.forEach((video, i) => {
+            if (i === index) {
+                video.style.display = 'block'; // Show the current video
+            } else {
+                video.style.display = 'none'; // Hide other videos
+            }
+        });
+    }
+    
+    // Show the first video on load
+    showVideo(currentVideoIndex - 1);
+
+    function nextVideo() {
+        if (currentVideoIndex < videos.length) {
+            currentVideoIndex++;
+        } else {
+            currentVideoIndex = 1; // Loop back to the first video
+        }
+        showVideo(currentVideoIndex - 1);
+    }
+
+    function previousVideo() {
+        if (currentVideoIndex > 1) {
+            currentVideoIndex--;
+        } else {
+            currentVideoIndex = videos.length; // Loop back to the last video
+        }
+        showVideo(currentVideoIndex - 1);
+    }
+</script>
     <!-- Contact Information -->
     <section class="contact-info">
         <h2>Get in Touch with Us Today</h2>
