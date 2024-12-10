@@ -100,36 +100,106 @@
         }
 
         .overview {
-            padding: 50px 20px;
-            background-color: #ffffff;
-            text-align: center;
-            color: #2c3e50;
-        }
+    padding: 50px 20px;
+    background-image: url('images/pest-control-bg.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #2c3e50; /* Keep text black for readability */
+    text-align: center;
+}
 
-        .overview h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
+.overview h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: none; /* No text shadow since the background is light */
+}
 
-        .overview ul {
-            list-style: none;
-            padding: 0;
-            font-size: 18px;
-        }
+.overview ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
 
-        .overview ul li {
-            margin: 10px 0;
-        }
+.overview ul li {
+    margin: 10px 0;
+}
 
-        .overview a {
-            text-decoration: none;
-            color: #1abc9c;
-            font-size: 18px;
-        }
+.overview a {
+    text-decoration: none;
+    color: #1abc9c; /* Light green color */
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for the link */
+    transition: background-color 0.3s ease;
+}
 
-        .overview a:hover {
-            text-decoration: underline;
-        }
+.overview a:hover {
+    text-decoration: underline;
+    background-color: #1abc9c; /* Green background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+    .overview {
+        padding: 30px 15px; /* Less padding for smaller screens */
+    }
+
+    .overview h2 {
+        font-size: 24px; /* Smaller heading font size */
+    }
+
+    .overview ul {
+        font-size: 16px; /* Smaller list font size */
+    }
+
+    .overview a {
+        font-size: 16px; /* Smaller button font size */
+        padding: 8px 15px; /* Adjust padding for the button */
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+    .overview {
+        padding: 40px 15px; /* Moderate padding for tablets */
+    }
+
+    .overview h2 {
+        font-size: 28px; /* Moderate heading font size */
+    }
+
+    .overview ul {
+        font-size: 17px; /* Slightly smaller list font size */
+    }
+
+    .overview a {
+        font-size: 17px; /* Moderate button font size */
+    }
+}
+
+/* Larger devices (desktops) */
+@media (min-width: 1024px) {
+    .overview {
+        padding: 50px 20px; /* Larger padding for desktops */
+    }
+
+    .overview h2 {
+        font-size: 36px; /* Larger heading font size */
+    }
+
+    .overview ul {
+        font-size: 18px; /* Standard font size for the list */
+    }
+
+    .overview a {
+        font-size: 18px; /* Standard button font size */
+    }
+}
 
         .service-images {
             display: grid;
