@@ -11,20 +11,22 @@ body {
     color: #333; /* Dark gray text for readability */
     line-height: 1.6;
     font-size: 14px; /* Small font size for professionalism */
-    padding-top: 20px;
 }
 
 /* Header and Navigation */
 header {
-    background-color: #333; /* Dark background for header */
+    background-color: #120fee; /* Purple color for the header */
     color: #fff; /* White text */
     padding: 10px 0;
     text-align: center;
+    margin: 0; /* Remove any margin before the header */
+    width: 100%;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0; /* Remove margin from the nav */
 }
 
 nav ul li {
@@ -66,8 +68,8 @@ p {
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #120fee; /* Purple color for the footer */
+    color: #fff; /* White text */
     text-align: center;
     padding: 15px;
     margin-top: 30px;
