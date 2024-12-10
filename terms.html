@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Terms of Service | Madya Swa Nyuku Pest Control</title>
-<style>
+
+    <style>
     /* Global Styles */
     * {
         margin: 0;
@@ -19,7 +20,7 @@
         line-height: 1.6;
         background-color: #f9f9f9;
         color: #333;
-        padding: 20px;
+        padding: 0; /* Removed extra padding around body */
     }
 
     h1, h2 {
@@ -47,23 +48,20 @@
     header {
         background-color: #120fee;
         color: white;
-        padding: 20px;
-        margin-bottom: 30px;
-    }
-
-    header .logo img {
-        max-height: 50px;
-        width: auto;
+        padding: 20px 0; /* Adjusted padding to have no left/right container */
+        width: 100%; /* Ensures header spans the full width */
+        text-align: center; /* Aligns logo and navigation center */
     }
 
     header nav ul {
         list-style: none;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center; /* Center-align navigation links */
+        padding: 0;
     }
 
     header nav ul li {
-        margin-left: 30px;
+        margin: 0 15px; /* Set margin left and right of list items */
     }
 
     header nav ul li a {
@@ -82,8 +80,8 @@
         background-color: #120fee;
         color: white;
         text-align: center;
-        padding: 20px 20px;
-        margin-top: 30px;
+        padding: 20px 0; /* Removed extra container space */
+        width: 100%; /* Ensures footer spans the full width */
     }
 
     footer p {
@@ -112,7 +110,7 @@
 
     footer .social-icons {
         display: inline-block;
-        margin-left: 20px;
+        margin-top: 15px;
     }
 
     footer .social-icons a {
@@ -134,7 +132,6 @@
     }
 </style>
 
-  
 </head>
 <body>
     <header>
