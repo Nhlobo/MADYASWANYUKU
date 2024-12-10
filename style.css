@@ -13,125 +13,35 @@ body {
     font-size: 14px; /* Small font size for professionalism */
 }
 
-/* Header and Navigation */
-header {
-    background-color: #120fee; /* Purple color for the header */
-    color: #fff; /* White text */
-    padding: 10px 0;
-    text-align: center;
-    margin: 0; /* Remove any margin before the header */
-    width: 100%;
-}
+ header {
+            background-color: #120fee;
+            padding: 20px;
+            color: white;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; /* Remove margin from the nav */
-}
+        header .logo img {
+            max-height: 50px;
+            width: auto;
+        }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
 
-nav ul li a {
-    color: #fff; /* White text for links */
-    text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase; /* To keep the links professional */
-    letter-spacing: 1px;
-}
+        header nav ul li {
+            margin-left: 30px;
+        }
 
-nav ul li a:hover {
-    color: #f5a623; /* Hover effect with a golden color */
-}
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
 
-/* Registration Number Styling */
-.registration-no {
-    color: #f5a623; /* Registration number will have a different color */
-    font-weight: bold;
-}
+        header nav ul li a:hover {
+            color: #1abc9c;
+        }
 
-/* Main Content */
-h1 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #2c3e50; /* Dark, professional heading color */
-}
-
-h2 {
-    font-size: 20px;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 14px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-/* Footer */
-footer {
-    background-color: #120fee; /* Purple color for the footer */
-    color: #fff; /* White text */
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
-
-footer p {
-    font-size: 12px;
-}
-
-footer .footer-links {
-    margin-bottom: 10px;
-}
-
-footer .footer-links a {
-    color: #f5a623;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer .footer-links a:hover {
-    color: #fff;
-}
-
-footer .footer-bottom {
-    font-size: 12px;
-    color: #bbb; /* Light gray for less emphasis */
-}
-
-/* Footer Registration Number */
-footer .registration-no {
-    color: #f5a623; /* Registration number in footer will have a different color */
-    font-weight: bold;
-}
-
-/* Links */
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #2980b9;
-}
-
-/* Section for service list */
-ul {
-    list-style-type: none;
-    padding-left: 20px;
-}
-
-ul li {
-    font-size: 14px;
-    margin-bottom: 8px;
-}
-
-/* Ensure accessibility */
-a, h1, h2, p, li {
-    transition: color 0.3s ease;
-}
