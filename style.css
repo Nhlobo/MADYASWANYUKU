@@ -1,4 +1,4 @@
- /* Global Styles */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,39 +13,49 @@ body {
     font-size: 14px; /* Small font size for professionalism */
 }
 
- header {
-            background-color: #120fee;
-            padding: 20px;
-            color: white;
-        }
+h1, h2 {
+    color: #333; /* Dark text for main headings */
+    font-family: 'Arial', sans-serif;
+}
 
-        header .logo img {
-            max-height: 50px;
-            width: auto;
-        }
+ul {
+    list-style-type: none;
+}
 
-        header nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-        }
+ul li {
+    margin-bottom: 10px;
+}
 
-        header nav ul li {
-            margin-left: 30px;
-        }
+/* Header Styling */
+header {
+    background-color: #120fee; /* Header background color */
+    padding: 20px;
+    color: white;
+}
 
-        header nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
 
-        header nav ul li a:hover {
-            color: #1abc9c;
-        }
+header nav ul li {
+    margin-left: 30px;
+}
 
- footer {
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Footer Styling */
+footer {
     background-color: #120fee; /* Solid color for footer */
     color: white;
     text-align: center;
@@ -56,7 +66,6 @@ footer p {
     font-size: 14px;
     color: white;
     margin-bottom: 10px;
-    font-family: Arial, sans-serif;
 }
 
 footer .footer-bottom {
@@ -69,7 +78,6 @@ footer .footer-links a {
     color: white; /* White text color for consistency */
     text-decoration: none;
     margin: 0 10px;
-    font-family: Arial, sans-serif;
 }
 
 footer .footer-links a:hover {
@@ -92,4 +100,3 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #1abc9c;
 }
-
