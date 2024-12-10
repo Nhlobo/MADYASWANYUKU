@@ -5,113 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Madya Swa Nyuku Business Services</title>
     <style>
-    /* Header Styling */
-header {
-    background-color: #120fee;
-    color: white;
-    padding: 0; /* Removed padding to have no space before the header */
-    width: 100%; /* Ensures header spans the full width */
-    text-align: center; /* Aligns logo and navigation center */
-    margin: 0; /* Ensures no space before the header */
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center; /* Center-align navigation links */
+/* Global Styles */
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header nav ul li {
-    margin: 0 15px; /* Set margin left and right of list items */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px; /* Base font size */
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0; /* Removed extra padding around body */
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px; /* Font size for navigation links */
-    transition: color 0.3s ease;
+/* Heading Styles */
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
-header nav ul li a:hover {
-    color: #1abc9c;
+h1 {
+    font-size: 22px; /* Base size for h1 */
+    margin-bottom: 15px;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #120fee;
-    color: white;
-    text-align: center;
-    padding: 20px 0; /* Padding for footer */
-    width: 100%; /* Ensures footer spans the full width */
-    margin: 0; /* No margin to ensure no extra space around footer */
-}
-
-footer p {
-    font-size: 14px;
-    color: white;
+h2 {
+    font-size: 18px; /* Base size for h2 */
     margin-bottom: 10px;
-    font-family: Arial, sans-serif;
+    color: #555;
 }
 
-footer .footer-bottom {
-    font-size: 12px;
-    color: #95a5a6;
-}
-
-footer .footer-links a {
+/* Paragraph Styling */
+p {
+    margin: 12px 0;
     font-size: 14px;
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-footer .footer-links a:hover {
-    text-decoration: underline;
-}
-
-footer .social-icons {
-    display: inline-block;
-    margin-top: 15px;
-}
-
-footer .social-icons a {
-    margin: 0 10px;
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover {
-    color: #1abc9c;
-}
 /* Header Styling */
 header {
     background-color: #120fee;
     color: white;
-    padding: 10px 0; /* Reduced padding for a more compact header */
-    width: 100%; /* Ensures header spans the full width */
-    text-align: center; /* Center-aligns navigation links */
-    margin: 0; /* No margin to ensure no extra space around header */
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Center-align navigation links */
+    justify-content: center;
     padding: 0;
 }
 
 header nav ul li {
-    margin: 0 12px; /* Reduced margin for a more compact layout */
+    margin: 0 12px;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 16px; /* Reduced font size for a more balanced look */
+    font-size: 16px;
     transition: color 0.3s ease;
 }
 
@@ -124,28 +82,28 @@ footer {
     background-color: #120fee;
     color: white;
     text-align: center;
-    padding: 15px 0; /* Adjusted padding for a balanced footer size */
-    width: 100%; /* Ensures footer spans the full width */
-    margin: 0; /* No margin around footer */
+    padding: 15px 0;
+    width: 100%;
+    margin: 0;
 }
 
 footer p {
-    font-size: 13px; /* Slightly smaller text for a professional look */
+    font-size: 13px;
     color: white;
     margin-bottom: 8px;
     font-family: Arial, sans-serif;
 }
 
 footer .footer-bottom {
-    font-size: 11px; /* Smaller font size for footer bottom text */
+    font-size: 11px;
     color: #95a5a6;
 }
 
 footer .footer-links a {
-    font-size: 13px; /* Consistent small font size for links */
+    font-size: 13px;
     color: white;
     text-decoration: none;
-    margin: 0 8px; /* Reduced margin for compact layout */
+    margin: 0 8px;
     font-family: Arial, sans-serif;
 }
 
@@ -155,12 +113,12 @@ footer .footer-links a:hover {
 
 footer .social-icons {
     display: inline-block;
-    margin-top: 12px; /* Adjusted spacing for social icons */
+    margin-top: 12px;
 }
 
 footer .social-icons a {
-    margin: 0 8px; /* Reduced space between social icons */
-    font-size: 20px; /* Slightly smaller social icon size for a professional feel */
+    margin: 0 8px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -169,6 +127,116 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #1abc9c;
 }
+
+/* List Styling */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones) */
+@media (max-width: 600px) {
+    body {
+        font-size: 12px; /* Slightly smaller font on small screens */
+    }
+
+    h1 {
+        font-size: 18px; /* Smaller heading size */
+    }
+
+    h2 {
+        font-size: 16px; /* Smaller h2 font size */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack navigation items on smaller screens */
+    }
+
+    header nav ul li {
+        margin: 8px 0; /* Adjust margin for vertical layout */
+    }
+
+    footer p {
+        font-size: 12px; /* Adjust footer text size */
+    }
+
+    footer .footer-links a {
+        font-size: 12px; /* Adjust footer link size */
+    }
+
+    footer .social-icons a {
+        font-size: 18px; /* Smaller icon size for better fit */
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+    body {
+        font-size: 13px; /* Slightly larger than small devices, but still compact */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0; /* Adjust margin for vertical navigation */
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    footer .footer-links a {
+        font-size: 13px;
+    }
+
+    footer .social-icons a {
+        font-size: 19px;
+    }
+}
+
+/* Larger devices (desktops) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 14px; /* Base font size for larger screens */
+    }
+
+    h1 {
+        font-size: 22px; /* Larger headings for desktops */
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    header nav ul {
+        flex-direction: row; /* Horizontal layout for larger screens */
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    footer .footer-links a {
+        font-size: 14px;
+    }
+
+    footer .social-icons a {
+        font-size: 20px;
+    }
+}
+
  </style>
     
 </head>
