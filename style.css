@@ -1,4 +1,4 @@
-/* Global Styles */
+ /* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +35,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #fff; /* White text for links */
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase; /* To keep the links professional */
@@ -44,6 +44,12 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #f5a623; /* Hover effect with a golden color */
+}
+
+/* Registration Number Styling */
+.registration-no {
+    color: #f5a623; /* Registration number will have a different color */
+    font-weight: bold;
 }
 
 /* Main Content */
@@ -96,6 +102,12 @@ footer .footer-links a:hover {
 footer .footer-bottom {
     font-size: 12px;
     color: #bbb; /* Light gray for less emphasis */
+}
+
+/* Footer Registration Number */
+footer .registration-no {
+    color: #f5a623; /* Registration number in footer will have a different color */
+    font-weight: bold;
 }
 
 /* Links */
