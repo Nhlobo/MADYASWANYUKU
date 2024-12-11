@@ -27,64 +27,90 @@
             font-family: Arial, sans-serif;
             color: black;
         }
-
-
-         /* Header and Navigation */
-        header {
+.navigation-bar {
+            font-size: 18px;
+            background-color: #120fee;
+            padding: 10px 10px;
             position: fixed;
             top: 0;
-            left: 0;
             width: 100%;
-            background-color: #120fee;
-            color: white;
-            padding: 20px;
             z-index: 1000;
         }
 
-        header .logo img {
-            max-height: 50px;
+        .main-menu {
+            list-style-type: none;
+            display: none; /* Initially hidden on small screens */
+            padding-left: 0;
+        }
+
+        .menu-item,
+        .logo {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main-menu li {
+            text-align: center;
+            margin: 16px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 24px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .logo img {
+            max-height: 40px;  /* Adjust as needed */
             width: auto;
         }
 
-        header nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        header nav ul li {
-            margin-left: 30px;
-        }
-
-        header nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
-
-        header nav ul li a:hover {
-            color: #1abc9c;
-        }
-
-        /* Hamburger Menu */
-        .hamburger {
-            display: none;
-            flex-direction: column;
+        .toggle-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
             cursor: pointer;
         }
 
-        .hamburger div {
-            width: 25px;
-            height: 3px;
-            background-color: white;
-            margin: 4px 0;
+        /* For Desktop Start */
+        @media screen and (min-width: 768px) {
+            .toggle-button {
+                display: none;
+            }
+
+            .navigation-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 25px 40px;
+            }
+
+            .main-menu {
+                display: flex; /* Display menu horizontally on desktop */
+            }
+
+            .logo,
+            .main-menu li {
+                margin: 0;
+            }
+
+            .menu-item {
+                margin-left: 30px;
+            }
+
+            .logo:hover,
+            .menu-item:hover {
+                color: yellow;
+            }
+        }
+        /* For Desktop Ends */
+
+        /* Active class to display the menu on small screens */
+        .main-menu.active {
+            display: block;
         }
 
         /* Hero Section */
@@ -94,10 +120,10 @@
             text-align: center;
             color: white;
             padding: 0 20px;
-            background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 60px; /* This ensures the hero starts below the fixed navbar */
         }
 
         .hero video {
@@ -150,23 +176,9 @@
                 padding: 20px;
                 text-align: center;
             }
-
-            header nav ul li {
-                margin: 10px 0;
-            }
-
-            header nav ul li a {
-                font-size: 18px;
-            }
-
-            header nav ul.show {
-                display: flex;
-            }
-
-            .hamburger {
-                display: flex;
-            }
         }
+
+       
 
 .overview {
     padding: 50px 20px;
