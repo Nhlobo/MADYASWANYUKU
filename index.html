@@ -12,7 +12,7 @@
     <meta property="og:image" content="images/logo.png">
     <meta property="og:url" content="https://www.madyswanpestcontrol.com">
     <style>
-        * {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -97,13 +97,13 @@ header nav ul li a:hover {
 
 .overview {
     padding: 50px 20px;
-    background-image: url('images/logo.png'); /* Replace with your image path */
+    background-image: url('images/logo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     color: #2c3e50;
     text-align: center;
-    margin-bottom: 0; /* Ensure no margin below the overview section */
+    margin-bottom: 0;
 }
 
 .overview h2 {
@@ -140,12 +140,17 @@ header nav ul li a:hover {
 /* Media Queries for Responsiveness */
 
 @media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
     .overview {
         padding: 30px 15px;
     }
 
     .overview h2 {
         font-size: 24px;
+        margin-bottom: 10px;
     }
 
     .overview ul {
@@ -156,9 +161,22 @@ header nav ul li a:hover {
         font-size: 16px;
         padding: 8px 15px;
     }
+
+    /* Remove extra margin between sections */
+    .hero, .overview, .contact-info, .service-images {
+        margin-bottom: 0;
+    }
+
+    .cta-buttons {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
     .overview {
         padding: 40px 15px;
     }
@@ -173,6 +191,14 @@ header nav ul li a:hover {
 
     .overview a {
         font-size: 17px;
+    }
+
+    .hero {
+        padding: 60px 20px; /* Reduce padding for smaller screens */
+    }
+
+    .cta-buttons a {
+        padding: 10px 20px;
     }
 }
 
@@ -204,7 +230,7 @@ header nav ul li a:hover {
     width: 100%;
     height: 100vh;
     text-align: center;
-    margin-bottom: 0; /* Ensure no margin at the bottom */
+    margin-bottom: 0;
 }
 
 h2 {
@@ -257,7 +283,7 @@ h2 {
     color: white;
     text-align: center;
     padding: 40px 20px;
-    margin-top: 0; /* Remove margin-top to avoid extra spacing */
+    margin-top: 0;
 }
 
 .contact-info h2 {
