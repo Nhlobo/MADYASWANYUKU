@@ -12,6 +12,7 @@
     <meta property="og:image" content="images/logo.png">
     <meta property="og:url" content="https://www.madyswanpestcontrol.com">
     <style>
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +28,7 @@ body {
     color: black;
 }
 
+/* Header styles */
 header {
     background-color: #120fee;
     padding: 20px;
@@ -59,6 +61,7 @@ header nav ul li a:hover {
     color: #1abc9c;
 }
 
+/* Hero Section */
 .hero {
     background: url('images/homepage-bg.jpg') no-repeat center center/cover;
     text-align: center;
@@ -68,17 +71,18 @@ header nav ul li a:hover {
 
 .hero h1 {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduced margin */
 }
 
 .hero p {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Reduced margin */
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Call to action buttons */
 .cta-buttons a {
     background: rgb(249, 250, 7);
     background: radial-gradient(circle, rgba(249,250,7,1) 0%, rgba(18,15,238,1) 100%);
@@ -95,6 +99,7 @@ header nav ul li a:hover {
     background: radial-gradient(circle, rgba(18,15,238,1) 0%, rgba(249,250,7,1) 100%);
 }
 
+/* Overview Section */
 .overview {
     padding: 50px 20px;
     background-image: url('images/logo.png');
@@ -103,12 +108,13 @@ header nav ul li a:hover {
     background-repeat: no-repeat;
     color: #2c3e50;
     text-align: center;
-    margin-bottom: 0;
+    margin-top: 0;  /* Remove margin-top */
+    margin-bottom: 0;  /* Remove margin-bottom */
 }
 
 .overview h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;  /* Reduced margin */
 }
 
 .overview ul {
@@ -137,13 +143,131 @@ header nav ul li a:hover {
     color: white;
 }
 
+/* Service Images Section */
+.service-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 0;  /* Remove extra top margin */
+    margin-bottom: 0;  /* Remove extra bottom margin */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 10px;  /* Reduced margin */
+    height: 450px;
+}
+
+.service-video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-description {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Contact Info Section */
+.contact-info {
+    background: rgb(249, 250, 7);
+    background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 0;  /* Remove margin-top */
+    margin-bottom: 0;  /* Remove margin-bottom */
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    margin-bottom: 10px;  /* Reduced margin */
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.contact-info a:hover {
+    background: radial-gradient(circle, rgba(18, 15, 238, 1) 0%, rgba(249, 250, 7, 1) 100%);
+}
+
+/* Footer */
+footer {
+    background-color: #120fee;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 0;
+}
+
+footer p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer .footer-bottom {
+    font-size: 12px;
+    color: #95a5a6;
+}
+
+footer .footer-links a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #1abc9c;
+}
+
 /* Media Queries for Responsiveness */
-
 @media (max-width: 600px) {
-    body {
-        padding: 0;
-    }
-
     .overview {
         padding: 30px 15px;
     }
@@ -173,10 +297,6 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 0;
-    }
-
     .overview {
         padding: 40px 15px;
     }
@@ -194,7 +314,7 @@ header nav ul li a:hover {
     }
 
     .hero {
-        padding: 60px 20px; /* Reduce padding for smaller screens */
+        padding: 60px 20px;
     }
 
     .cta-buttons a {
@@ -219,6 +339,7 @@ header nav ul li a:hover {
         font-size: 18px;
     }
 }
+
 
 .service-images {
     display: flex;
