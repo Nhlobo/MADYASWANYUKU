@@ -26,12 +26,13 @@ body {
     flex-direction: column;
     font-family: Arial, sans-serif;
     color: black;
+    margin: 0;  /* Ensure body margin is zero */
 }
 
 /* Header styles */
 header {
     background-color: #120fee;
-    padding: 20px;
+    padding: 20px 0;  /* Padding adjusted for even spacing */
     color: white;
 }
 
@@ -65,8 +66,9 @@ header nav ul li a:hover {
 .hero {
     background: url('images/homepage-bg.jpg') no-repeat center center/cover;
     text-align: center;
-    padding: 40px 20px;  /* Reduced padding */
+    padding: 40px 20px;  /* Reduced padding to minimize space */
     color: white;
+    margin: 0;  /* Remove margin around hero section */
 }
 
 .hero h1 {
@@ -108,6 +110,7 @@ header nav ul li a:hover {
     background-repeat: no-repeat;
     color: #2c3e50;
     text-align: center;
+    margin: 0;  /* Remove any top/bottom margins */
 }
 
 .overview h2 {
@@ -147,8 +150,8 @@ header nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    margin: 0;
+    padding: 0;  /* Ensure no padding */
+    margin: 0;  /* Remove all margin */
     width: 100%;
     height: auto;
     text-align: center;
@@ -156,13 +159,13 @@ header nav ul li a:hover {
 
 h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  /* Adjust margin if needed */
 }
 
 .video-container {
     width: 80%;
     max-width: 800px;
-    margin-bottom: 5px;  /* Reduced margin */
+    margin-bottom: 5px;  /* Adjust margin */
     height: 450px;
 }
 
@@ -537,10 +540,8 @@ footer .social-icons a:hover {
         <a href="services.html">Learn More About Our Services</a>
     </section>
 
-
     <section class="service-images">
     <h2>Our Solutions in Action</h2>
-
     <!-- Video container showcasing all content -->
     <div class="video-container">
         <video class="service-video" id="videoElement" controls>
@@ -550,7 +551,6 @@ footer .social-icons a:hover {
         <p class="service-description">Effective Weed Control, Comprehensive Ant Control, Cockroach Elimination Services, Complete Bed Bug Treatment, Termite Prevention & Elimination</p>
     </div>
 </section>
-
     <!-- Contact Information -->
     <section class="contact-info">
         <h2>Get in Touch with Us Today</h2>
