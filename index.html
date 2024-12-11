@@ -12,7 +12,7 @@
     <meta property="og:image" content="images/logo.png">
     <meta property="og:url" content="https://www.madyswanpestcontrol.com">
     <style>
-  * {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,6 +27,7 @@ body {
     color: black;
 }
 
+/* Global header styles */
 header {
     background-color: #120fee;
     padding: 20px;
@@ -59,26 +60,29 @@ header nav ul li a:hover {
     color: #1abc9c;
 }
 
+/* Hero section */
 .hero {
     background: url('images/homepage-bg.jpg') no-repeat center center/cover;
     text-align: center;
     padding: 80px 20px;
     color: white;
+    margin-bottom: 0;  /* Remove gap below hero */
 }
 
 .hero h1 {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;  /* Reduce margin */
 }
 
 .hero p {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;  /* Reduce margin */
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* CTA buttons */
 .cta-buttons a {
     background: rgb(249, 250, 7);
     background: radial-gradient(circle, rgba(249,250,7,1) 0%, rgba(18,15,238,1) 100%);
@@ -95,20 +99,21 @@ header nav ul li a:hover {
     background: radial-gradient(circle, rgba(18,15,238,1) 0%, rgba(249,250,7,1) 100%);
 }
 
+/* Overview section */
 .overview {
-    padding: 50px 20px;
+    padding: 30px 20px;
     background-image: url('images/logo.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     color: #2c3e50;
     text-align: center;
-    margin-bottom: 0;
+    margin: 0;  /* Remove margin */
 }
 
 .overview h2 {
     font-size: 36px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;  /* Reduce margin */
 }
 
 .overview ul {
@@ -137,89 +142,7 @@ header nav ul li a:hover {
     color: white;
 }
 
-/* Media Queries for Responsiveness */
-
-@media (max-width: 600px) {
-    body {
-        padding: 0;
-    }
-
-    .overview {
-        padding: 30px 15px;
-    }
-
-    .overview h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .overview ul {
-        font-size: 16px;
-    }
-
-    .overview a {
-        font-size: 16px;
-        padding: 8px 15px;
-    }
-
-    /* Remove extra margin between sections */
-    .hero, .overview, .contact-info, .service-images {
-        margin-bottom: 0;
-    }
-
-    .cta-buttons {
-        margin-bottom: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        padding: 0;
-    }
-
-    .overview {
-        padding: 40px 15px;
-    }
-
-    .overview h2 {
-        font-size: 28px;
-    }
-
-    .overview ul {
-        font-size: 17px;
-    }
-
-    .overview a {
-        font-size: 17px;
-    }
-
-    .hero {
-        padding: 60px 20px; /* Reduce padding for smaller screens */
-    }
-
-    .cta-buttons a {
-        padding: 10px 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .overview {
-        padding: 50px 20px;
-    }
-
-    .overview h2 {
-        font-size: 36px;
-    }
-
-    .overview ul {
-        font-size: 18px;
-    }
-
-    .overview a {
-        font-size: 18px;
-    }
-}
-
+/* Service images section */
 .service-images {
     display: flex;
     flex-direction: column;
@@ -228,7 +151,7 @@ header nav ul li a:hover {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100vh;
+    height: auto;
     text-align: center;
     margin-bottom: 0;
 }
@@ -238,10 +161,11 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Video container */
 .video-container {
     width: 80%;
     max-width: 800px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     height: 450px;
 }
 
@@ -258,78 +182,98 @@ h2 {
     color: #333;
 }
 
-@media (orientation: landscape) {
-    .service-images {
-        height: 100vh;
-        width: 100%;
-    }
-}
-
 @media (max-width: 768px) {
-    .video-container {
-        width: 90%;
-        max-width: 100%;
-        height: auto;
+    /* Mobile Adjustments */
+    .hero {
+        padding: 60px 20px;  /* Reduce padding */
     }
 
-    h2 {
-        font-size: 2em;
+    .overview {
+        padding: 40px 15px;  /* Adjust padding */
+    }
+
+    .service-images {
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .overview h2 {
+        font-size: 24px;  /* Smaller heading */
+        margin-bottom: 10px;  /* Adjust spacing */
+    }
+
+    .overview ul {
+        font-size: 16px;
+    }
+
+    .overview a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    /* Reduce spacing between sections */
+    .cta-buttons {
+        margin-bottom: 0;
+    }
+
+    .contact-info {
+        padding: 30px 15px;  /* Adjust padding */
+        margin-top: 0;  /* Reduce margin-top */
     }
 }
 
-.contact-info {
-    background: rgb(249, 250, 7);
-    background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 0;
+@media (max-width: 600px) {
+    /* Adjustments for small screens (phones) */
+    body {
+        padding: 0;
+    }
+
+    .overview {
+        padding: 20px 10px;  /* Further reduce padding */
+    }
+
+    .overview h2 {
+        font-size: 22px;  /* Even smaller heading font */
+        margin-bottom: 10px;  /* Reduced margin */
+    }
+
+    .overview ul {
+        font-size: 15px;
+    }
+
+    .overview a {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+
+    /* Hero section adjustments */
+    .hero h1 {
+        font-size: 36px;  /* Smaller heading */
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    /* Remove excessive bottom margins */
+    .hero, .overview, .service-images, .contact-info {
+        margin-bottom: 0;
+    }
+
+    .cta-buttons {
+        margin-bottom: 0;
+    }
 }
 
-.contact-info h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.contact-info a {
-    background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
-    color: white;
-    padding: 12px 30px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.contact-info a:hover {
-    background: radial-gradient(circle, rgba(18, 15, 238, 1) 0%, rgba(249, 250, 7, 1) 100%);
-}
-
-.cta-btn {
-    background-color: #120fee;
-    color: white;
-    padding: 12px 30px;
-    font-size: 18px;
-    text-decoration: none;
-    margin: 0 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.cta-btn:hover {
-    background-color: #0e0ddb;
-}
-
+/* Footer */
 footer {
     background-color: #120fee;
     color: white;
     text-align: center;
     padding: 20px 20px;
+    margin-top: 0;
 }
 
 footer p {
@@ -370,7 +314,6 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #1abc9c;
 }
-
 
     </style>
 
