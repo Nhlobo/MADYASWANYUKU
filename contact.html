@@ -446,6 +446,10 @@ ul {
     height: 130px;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .whatsapp-icon img {
         width: 40px;
@@ -633,6 +637,29 @@ ul {
             <img src="images/whatsapp-icon.png" alt="WhatsApp Icon">
         </a>
     </section>
+
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+    const whatsAppIcon = document.getElementById("whatsAppIcon");
+
+    // Function to check if user has scrolled near the footer
+    function checkTriggerPoint() {
+        const scrollPosition = window.scrollY + window.innerHeight; // Bottom of the viewport
+        const triggerPoint = document.body.offsetHeight - 300; // 300px above the bottom
+        return scrollPosition >= triggerPoint;
+    }
+
+    // Event listener for scrolling
+    window.addEventListener("scroll", () => {
+        if (checkTriggerPoint()) {
+            whatsAppIcon.style.display = "block"; // Show the WhatsApp icon
+        } else {
+            whatsAppIcon.style.display = "none"; // Hide the WhatsApp icon
+        }
+    });
+});
+ </script>
 
     <section id="contact-section">
     <div class="contact-info">
