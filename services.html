@@ -236,7 +236,108 @@ ul {
         font-size: 20px;
     }
 }
+.services-section {
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    .intro-text {
+        text-align: center;
+        font-size: 1.1em;
+        margin-bottom: 40px;
+        color: #555;
+    }
+
+    .service-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+
+    .service-content {
+        width: 60%;
+    }
+
+    .service-title {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        color: #2C3E50;
+    }
+
+    .service-description {
+        font-size: 1em;
+        color: #7F8C8D;
+        line-height: 1.5;
+    }
+
+    .service-image {
+        width: 35%;
+    }
+
+    .service-img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .cta-container {
+        text-align: center;
+        margin-top: 50px;
+        background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 8px;
+    }
+
+    .cta-container h3 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .cta-container p {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background-color: #120fee;
+        color: white;
+        padding: 15px 30px;
+        font-size: 1.1em;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background-color: #0d0bdb;
+    }
+
+    /* Mobile responsive adjustments */
+    @media (max-width: 768px) {
+        .service-item {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .service-content {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .service-image {
+            width: 100%;
+        }
+    }
     </style>
 </head>
 <body>
@@ -255,55 +356,84 @@ ul {
 
 <!-- Main Content -->
 <main>
-    <h1>Our Professional Pest Control Services</h1>
-    <section>
-        <h2>Comprehensive Pest Control for Every Need</h2>
-        <p>We provide an extensive range of pest control solutions tailored to meet the needs of residential, commercial, and industrial clients.</p>
+    <section class="services-section">
+        <h1>Our Professional Pest Control Services</h1>
+        <p class="intro-text">Protecting your home, business, and environment with expert pest control solutions. Whether you're dealing with termites, ants, rodents, or other pests, our tailored services provide long-lasting protection and peace of mind.</p>
 
         <!-- Service Detail: Termite Control -->
         <div class="service-item">
-            <h3>Termite Control</h3>
-            <img src="images/termites.jpg" alt="Termite Control" class="service-img">
-            <p>Termites can cause extensive damage to your property. Our treatment and prevention programs are designed to keep your home or business termite-free. Using eco-friendly and safe methods, we eliminate termites at all stages of life.</p>
+            <div class="service-content">
+                <h2 class="service-title">Termite Control</h2>
+                <p class="service-description">Termites can cause extensive damage to your property. Our treatment and prevention programs are designed to keep your home or business termite-free. Using eco-friendly and safe methods, we eliminate termites at all stages of life.</p>
+            </div>
+            <div class="service-image">
+                <img src="images/termites.jpg" alt="Termite Control" class="service-img">
+            </div>
         </div>
 
         <!-- Service Detail: Ant Control -->
         <div class="service-item">
-            <h3>Ant Control</h3>
-            <img src="images/ants.jpg" alt="Ant Control" class="service-img">
-            <p>Ants can invade your home or office, creating an uncomfortable environment. Our experts offer targeted treatments to eliminate ants and prevent future infestations.</p>
+            <div class="service-content">
+                <h2 class="service-title">Ant Control</h2>
+                <p class="service-description">Ants can invade your home or office, creating an uncomfortable environment. Our experts offer targeted treatments to eliminate ants and prevent future infestations.</p>
+            </div>
+            <div class="service-image">
+                <img src="images/ants.jpg" alt="Ant Control" class="service-img">
+            </div>
         </div>
 
         <!-- Service Detail: Rodent Control -->
         <div class="service-item">
-            <h3>Rodent Control</h3>
-            <img src="images/rodents.jpg" alt="Rodent Control" class="service-img">
-            <p>Rodents pose significant health risks and damage to property. Our rodent control solutions ensure that your space remains rodent-free with humane and safe approaches.</p>
+            <div class="service-content">
+                <h2 class="service-title">Rodent Control</h2>
+                <p class="service-description">Rodents pose significant health risks and damage to property. Our rodent control solutions ensure that your space remains rodent-free with humane and safe approaches.</p>
+            </div>
+            <div class="service-image">
+                <img src="images/rodents.jpg" alt="Rodent Control" class="service-img">
+            </div>
         </div>
 
         <!-- Service Detail: Bed Bug Control -->
         <div class="service-item">
-            <h3>Bed Bug Treatment</h3>
-            <img src="images/bedbugs.jpg" alt="Bed Bug Control" class="service-img">
-            <p>Bed bugs are notorious for infesting homes and hotels. Our bed bug treatment program guarantees to eliminate these pests and ensure that your property is restored to a clean, safe state.</p>
+            <div class="service-content">
+                <h2 class="service-title">Bed Bug Treatment</h2>
+                <p class="service-description">Bed bugs are notorious for infesting homes and hotels. Our bed bug treatment program guarantees to eliminate these pests and ensure that your property is restored to a clean, safe state.</p>
+            </div>
+            <div class="service-image">
+                <img src="images/bedbugs.jpg" alt="Bed Bug Control" class="service-img">
+            </div>
         </div>
 
         <!-- Service Detail: Cockroach Control -->
         <div class="service-item">
-            <h3>Cockroach Control</h3>
-            <img src="images/cockroach.jpg" alt="Cockroach Control" class="service-img">
-            <p>Cockroaches are not only a nuisance but also carry harmful bacteria. Our cockroach control services target infestations and prevent future occurrences using safe, proven methods.</p>
+            <div class="service-content">
+                <h2 class="service-title">Cockroach Control</h2>
+                <p class="service-description">Cockroaches are not only a nuisance but also carry harmful bacteria. Our cockroach control services target infestations and prevent future occurrences using safe, proven methods.</p>
+            </div>
+            <div class="service-image">
+                <img src="images/cockroach.jpg" alt="Cockroach Control" class="service-img">
+            </div>
         </div>
 
         <!-- Service Detail: Weed Control -->
         <div class="service-item">
-            <h3>Weed Control</h3>
-            <img src="images/weeds.jpg" alt="Weed Control" class="service-img">
-            <p>Weeds can overtake gardens, lawns, and commercial spaces. Our weed control services ensure that your environment remains healthy and free of unwanted plant growth.</p>
+            <div class="service-content">
+                <h2 class="service-title">Weed Control</h2>
+                <p class="service-description">Weeds can overtake gardens, lawns, and commercial spaces. Our weed control services ensure that your environment remains healthy and free of unwanted plant growth.</p>
+            </div>
+            <div class="service-image">
+                <img src="images/weeds.jpg" alt="Weed Control" class="service-img">
+            </div>
+        </div>
+        
+        <!-- Call to Action Section -->
+        <div class="cta-container">
+            <h3>Ready to Take Action?</h3>
+            <p>Protect your property today with expert pest control services. Contact us now for a free consultation or get a customized treatment plan.</p>
+            <a href="contact.html" class="cta-button">Get a Free Estimate</a>
         </div>
     </section>
 </main>
-
 
     <!-- Footer Section -->
 <footer>
