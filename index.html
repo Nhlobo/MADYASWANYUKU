@@ -12,109 +12,104 @@
     <meta property="og:image" content="images/logo.png">
     <meta property="og:url" content="https://www.madyswanpestcontrol.com">
     <style>
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    background-color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    color: black;
-}
+        body {
+            background-color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
 
-/* Header styles */
-header {
-    background-color: #120fee;
-    padding: 20px;
-    color: white;
-}
+        header {
+            background-color: #120fee;
+            padding: 20px;
+            color: white;
+        }
 
-header .logo img {
-    max-height: 50px;
-    width: auto;
-}
+        header .logo img {
+            max-height: 50px;
+            width: auto;
+        }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-}
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
 
-header nav ul li {
-    margin-left: 30px;
-}
+        header nav ul li {
+            margin-left: 30px;
+        }
 
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: color 0.3s;
-}
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
 
-header nav ul li a:hover {
-    color: #1abc9c;
-}
+        header nav ul li a:hover {
+            color: #1abc9c;
+        }
 
-/* Hero Section */
-.hero {
-    background: url('images/Pest-Control.png') no-repeat center center/cover;
-    text-align: center;
-    padding: 80px 20px;
-    color: white;
-}
+        .hero {
+            background: url('images/homepage-bg.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px; /* Reduced margin */
-}
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
 
-.hero p {
-    font-size: 20px;
-    margin-bottom: 20px; /* Reduced margin */
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-/* Call to action buttons */
-.cta-buttons a {
-    background: rgb(249, 250, 7);
-    background: radial-gradient(circle, rgba(249,250,7,1) 0%, rgba(18,15,238,1) 100%);
-    color: white;
-    padding: 12px 30px;
-    font-size: 18px;
-    text-decoration: none;
-    margin: 0 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
+        .cta-buttons a {
+            background: rgb(249, 250, 7);
+            background: radial-gradient(circle, rgba(249,250,7,1) 0%, rgba(18,15,238,1) 100%);
+            color: white;
+            padding: 12px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
 
-.cta-buttons a:hover {
-    background: radial-gradient(circle, rgba(18,15,238,1) 0%, rgba(249,250,7,1) 100%);
-}
+        .cta-buttons a:hover {
+            background: radial-gradient(circle, rgba(18,15,238,1) 0%, rgba(249,250,7,1) 100%);
+        }
 
-/* Overview Section */
+
 .overview {
     padding: 50px 20px;
-    background-image: url('images/logo.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #2c3e50;
+    background-image: url('images/logo.png'); /* Replace with your image path */
+    background-size: contain; /* Ensures the whole image fits within the section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #2c3e50; /* Keep text black for readability */
     text-align: center;
-    margin-top: 0;  /* Remove margin-top */
-    margin-bottom: 0;  /* Remove margin-bottom */
 }
 
 .overview h2 {
     font-size: 36px;
-    margin-bottom: 10px;  /* Reduced margin */
+    margin-bottom: 20px;
+    text-shadow: none; /* No text shadow since the background is light */
 }
 
 .overview ul {
@@ -129,272 +124,192 @@ header nav ul li a:hover {
 
 .overview a {
     text-decoration: none;
-    color: #1abc9c;
+    color: #1abc9c; /* Light green color */
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background for the link */
     transition: background-color 0.3s ease;
 }
 
 .overview a:hover {
     text-decoration: underline;
-    background-color: #1abc9c;
-    color: white;
-}
-
-
-/* Contact Info Section */
-.contact-info {
-    background: rgb(249, 250, 7);
-    background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 0;  /* Remove margin-top */
-    margin-bottom: 0;  /* Remove margin-bottom */
-}
-
-.contact-info h2 {
-    font-size: 36px;
-    margin-bottom: 10px;  /* Reduced margin */
-}
-
-.contact-info p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.contact-info a {
-    background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
-    color: white;
-    padding: 12px 30px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.contact-info a:hover {
-    background: radial-gradient(circle, rgba(18, 15, 238, 1) 0%, rgba(249, 250, 7, 1) 100%);
-}
-
-/* Footer */
-footer {
-    background-color: #120fee;
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-    margin-top: 0;
-}
-
-footer p {
-    font-size: 14px;
-    color: white;
-    margin-bottom: 10px;
-}
-
-footer .footer-bottom {
-    font-size: 12px;
-    color: #95a5a6;
-}
-
-footer .footer-links a {
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer .footer-links a:hover {
-    text-decoration: underline;
-}
-
-footer .social-icons {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-footer .social-icons a {
-    margin: 0 10px;
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-footer .social-icons a:hover {
-    color: #1abc9c;
+    background-color: #1abc9c; /* Green background on hover */
+    color: white; /* White text on hover */
 }
 
 /* Media Queries for Responsiveness */
+
+/* Small devices (phones) */
 @media (max-width: 600px) {
     .overview {
-        padding: 30px 15px;
+        padding: 30px 15px; /* Less padding for smaller screens */
     }
 
     .overview h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
+        font-size: 24px; /* Smaller heading font size */
     }
 
     .overview ul {
-        font-size: 16px;
+        font-size: 16px; /* Smaller list font size */
     }
 
     .overview a {
-        font-size: 16px;
-        padding: 8px 15px;
-    }
-
-    /* Remove extra margin between sections */
-    .hero, .overview, .contact-info, .service-images {
-        margin-bottom: 0;
-    }
-
-    .cta-buttons {
-        margin-bottom: 0;
+        font-size: 16px; /* Smaller button font size */
+        padding: 8px 15px; /* Adjust padding for the button */
     }
 }
 
+/* Medium devices (tablets) */
 @media (max-width: 768px) {
     .overview {
-        padding: 40px 15px;
+        padding: 40px 15px; /* Moderate padding for tablets */
     }
 
     .overview h2 {
-        font-size: 28px;
+        font-size: 28px; /* Moderate heading font size */
     }
 
     .overview ul {
-        font-size: 17px;
+        font-size: 17px; /* Slightly smaller list font size */
     }
 
     .overview a {
-        font-size: 17px;
-    }
-
-    .hero {
-        padding: 60px 20px;
-    }
-
-    .cta-buttons a {
-        padding: 10px 20px;
+        font-size: 17px; /* Moderate button font size */
     }
 }
 
+/* Larger devices (desktops) */
 @media (min-width: 1024px) {
     .overview {
-        padding: 50px 20px;
+        padding: 50px 20px; /* Larger padding for desktops */
     }
 
     .overview h2 {
-        font-size: 36px;
+        font-size: 36px; /* Larger heading font size */
     }
 
     .overview ul {
-        font-size: 18px;
+        font-size: 18px; /* Standard font size for the list */
     }
 
     .overview a {
-        font-size: 18px;
+        font-size: 18px; /* Standard button font size */
     }
 }
 
 
-.service-images {
+        .service-images {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100vh;
+    padding: 0; /* Remove padding to avoid any unwanted margin behind */
+    margin: 0;  /* Remove margin to avoid extra space */
+    width: 100%; /* Make it take the full width */
+    height: 100vh; /* Make it take the full viewport height */
     text-align: center;
-    margin-bottom: 0;
 }
 
+/* Heading style */
 h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Space below the heading */
 }
 
+/* Video container */
 .video-container {
-    width: 80%;
-    max-width: 800px;
-    margin-bottom: 20px;
-    height: 450px;
+    display: none; /* Initially hide all videos */
+    width: 80%; /* Adjust width */
+    max-width: 900px;
+    margin-bottom: 20px; /* Space between video and description */
 }
 
 .service-video {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.service-description {
-    font-size: 1.2em;
-    margin-top: 10px;
-    color: #333;
+        /* Button container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Add space between buttons */
+    margin-top: 20px;
 }
 
-@media (orientation: landscape) {
-    .service-images {
-        height: 100vh;
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .video-container {
-        width: 90%;
-        max-width: 100%;
-        height: auto;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-}
-
-.contact-info {
-    background: rgb(249, 250, 7);
-    background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 0;
-}
-
-.contact-info h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.contact-info a {
-    background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
-    color: white;
-    padding: 12px 30px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.contact-info a:hover {
-    background: radial-gradient(circle, rgba(18, 15, 238, 1) 0%, rgba(249, 250, 7, 1) 100%);
-}
-
-.cta-btn {
+/* Style for buttons */
+.nav-btn {
     background-color: #120fee;
     color: white;
+    font-size: 1.5em; /* Larger font size for arrows */
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height to make the button round */
+    border-radius: 50%; /* Make the button round */
+    border: none;
+    display: flex;
+    justify-content: center; /* Center the icon inside */
+    align-items: center; /* Center the icon vertically */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn i {
+    color: white; /* Set icon color to white */
+}
+
+.nav-btn:hover {
+    background-color: #0e0ddb; /* Darker shade on hover */
+}
+
+/* Hover effect for the buttons */
+.nav-btn:focus {
+    outline: none; /* Remove focus outline */
+}
+
+/* Optional: add a small shadow for better effect */
+.nav-btn:active {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+               
+         .contact-info {
+        background: rgb(249, 250, 7);
+        background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info a {
+        background: radial-gradient(circle, rgba(249, 250, 7, 1) 0%, rgba(18, 15, 238, 1) 100%);
+        color: white;
+        padding: 12px 30px;
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    .contact-info a:hover {
+        background: radial-gradient(circle, rgba(18, 15, 238, 1) 0%, rgba(249, 250, 7, 1) 100%);
+    }
+
+
+        .cta-btn {
+    background-color: #120fee; /* Set the button color */
+    color: white; /* Keep the text white */
     padding: 12px 30px;
     font-size: 18px;
     text-decoration: none;
@@ -404,11 +319,12 @@ h2 {
 }
 
 .cta-btn:hover {
-    background-color: #0e0ddb;
+    background-color: #0e0ddb; /* Change to a darker shade on hover */
 }
 
-footer {
-    background-color: #120fee;
+
+        footer {
+    background-color: #120fee; /* Solid color for footer */
     color: white;
     text-align: center;
     padding: 20px 20px;
@@ -418,6 +334,7 @@ footer p {
     font-size: 14px;
     color: white;
     margin-bottom: 10px;
+    font-family: Arial, sans-serif;
 }
 
 footer .footer-bottom {
@@ -426,14 +343,15 @@ footer .footer-bottom {
 }
 
 footer .footer-links a {
-    font-size: 14px;
-    color: white;
+    font-size: 14px; /* Same font size as footer text */
+    color: white; /* White text color for consistency */
     text-decoration: none;
     margin: 0 10px;
+    font-family: Arial, sans-serif;
 }
 
 footer .footer-links a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover for better interaction */
 }
 
 footer .social-icons {
@@ -502,20 +420,90 @@ footer .social-icons a:hover {
         <a href="services.html">Learn More About Our Services</a>
     </section>
 
-
     <section class="service-images">
     <h2>Our Solutions in Action</h2>
 
-    <!-- Video container showcasing all content -->
-    <div class="video-container">
-        <video class="service-video" id="videoElement" controls>
-            <source src="istockphoto-1257975523-640_adpp_is.mp4" type="video/mp4">
+    <div class="video-container" id="video1">
+        <video class="service-video" controls>
+            <source src="https://drive.google.com/uc?id=https://drive.google.com/file/d/1Ja2fnuvMi6Wa4Ch93YoKXCRpPGgbCzlE/view?usp=drivesdk" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <p class="service-description">Effective Weed Control, Comprehensive Ant Control, Cockroach Elimination Services, Complete Bed Bug Treatment, Termite Prevention & Elimination</p>
+        <p class="service-description">Effective Weed Control</p>
+    </div>
+
+    <div class="video-container" id="video2">
+        <video class="service-video" controls>
+            <source src="https://drive.google.com/uc?id=YOUR_FILE_ID_1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="service-description">Comprehensive Ant Control</p>
+    </div>
+
+    <div class="video-container" id="video3">
+        <video class="service-video" controls>
+           <source src="https://drive.google.com/uc?id=YOUR_FILE_ID_1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="service-description">Cockroach Elimination Services</p>
+    </div>
+
+    <div class="video-container" id="video4">
+        <video class="service-video" controls>
+            <source src="https://drive.google.com/uc?id=YOUR_FILE_ID_1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="service-description">Complete Bed Bug Treatment</p>
+    </div>
+
+    <div class="video-container" id="video5">
+        <video class="service-video" controls>
+            <source src="https://drive.google.com/uc?id=YOUR_FILE_ID_1" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="service-description">Termite Prevention & Elimination</p>
+    </div>
+
+    <div class="button-container">
+        <button class="nav-btn" onclick="previousVideo()">Previous</button>
+        <button class="nav-btn" onclick="nextVideo()">Next</button>
     </div>
 </section>
 
+<script>
+    // Initially display the first video
+    let currentVideoIndex = 1;
+    const videos = document.querySelectorAll('.video-container');
+    function showVideo(index) {
+        videos.forEach((video, i) => {
+            if (i === index) {
+                video.style.display = 'block'; // Show the current video
+            } else {
+                video.style.display = 'none'; // Hide other videos
+            }
+        });
+    }
+    
+    // Show the first video on load
+    showVideo(currentVideoIndex - 1);
+
+    function nextVideo() {
+        if (currentVideoIndex < videos.length) {
+            currentVideoIndex++;
+        } else {
+            currentVideoIndex = 1; // Loop back to the first video
+        }
+        showVideo(currentVideoIndex - 1);
+    }
+
+    function previousVideo() {
+        if (currentVideoIndex > 1) {
+            currentVideoIndex--;
+        } else {
+            currentVideoIndex = videos.length; // Loop back to the last video
+        }
+        showVideo(currentVideoIndex - 1);
+    }
+</script>
     <!-- Contact Information -->
     <section class="contact-info">
         <h2>Get in Touch with Us Today</h2>
