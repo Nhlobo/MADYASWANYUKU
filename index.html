@@ -410,6 +410,44 @@ footer .social-icons a:hover {
     color: #1abc9c;
 }
 
+       /* Blue background for the website */
+    body {
+      background-color: #007bff;
+    }
+
+    /* Glassmorphism popup style */
+    #cookie-popup {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      width: 90%;
+      max-width: 400px;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      font-size: 16px;
+      display: none; /* Initially hidden */
+    }
+
+    #cookie-popup button {
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    #cookie-popup button:hover {
+      background-color: #218838;
+    }
     </style>
 
     <!-- Add Font Awesome for Social Media Icons -->
@@ -508,7 +546,29 @@ footer .social-icons a:hover {
         <a href="https://www.linkedin.com/company/madyswanpestcontrol" target="_blank" class="fab fa-linkedin-in"></a>
     </div>
 </footer>
- 
+   
+  <!-- Cookie Popup -->
+  <div id="cookie-popup">
+    <p>We use cookies to improve your experience on our website. By continuing, you accept our use of cookies.</p>
+    <button onclick="acceptCookies()">Accept Cookies</button>
+  </div>
+   
+ <script>
+    // Check if the user has already accepted cookies
+    if (!localStorage.getItem("cookiesAccepted")) {
+      // If not accepted, show the popup
+      document.getElementById("cookie-popup").style.display = "block";
+    }
+
+    // Function to handle cookie acceptance
+    function acceptCookies() {
+      // Hide the popup
+      document.getElementById("cookie-popup").style.display = "none";
+
+      // Store in localStorage to remember the user's choice
+      localStorage.setItem("cookiesAccepted", "true");
+    }
+  </script>
 
 </body>
 </html>
