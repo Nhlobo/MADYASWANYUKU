@@ -1,22 +1,67 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pest Control Pricing</title>
   <style>
+    /* Global Styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
     }
+
+    /* Header Styles */
     header {
-      background-color: #120fee; /* Changed from #4CAF50 */
+      background-color: #120fee; /* Blue color */
       color: white;
       padding: 10px 20px;
       text-align: center;
     }
+
+    header nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Heading Styles */
+    h1, h2 {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 22px; /* Base size for h1 */
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 18px; /* Base size for h2 */
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    /* Main Content Styles */
     main {
       padding: 20px;
       max-width: 800px;
@@ -25,37 +70,43 @@
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
-    h1, h2 {
-      color: #333;
-    }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin-bottom: 20px;
     }
+
     table, th, td {
       border: 1px solid #ddd;
     }
+
     th, td {
       padding: 12px;
       text-align: center;
     }
+
     th {
-      background-color: #120fee; /* Changed from #4CAF50 */
+      background-color: #120fee; /* Header blue color */
       color: white;
     }
+
     td {
       background-color: #f9f9f9;
     }
+
     .contact-section {
       text-align: center;
       margin-top: 20px;
     }
+
     .contact-section a {
-      color: #120fee; /* Changed from #4CAF50 */
+      color: #120fee; /* Blue color */
       text-decoration: none;
       font-weight: bold;
     }
+
+    /* Footer Styles */
     footer {
       background-color: #120fee;
       color: white;
@@ -64,16 +115,19 @@
       width: 100%;
       margin: 0;
     }
+
     footer p {
       font-size: 13px;
       color: white;
       margin-bottom: 8px;
       font-family: Arial, sans-serif;
     }
+
     footer .footer-bottom {
       font-size: 11px;
       color: #95a5a6;
     }
+
     footer .footer-links a {
       font-size: 13px;
       color: white;
@@ -81,13 +135,16 @@
       margin: 0 8px;
       font-family: Arial, sans-serif;
     }
+
     footer .footer-links a:hover {
       text-decoration: underline;
     }
+
     footer .social-icons {
       display: inline-block;
       margin-top: 12px;
     }
+
     footer .social-icons a {
       margin: 0 8px;
       font-size: 20px;
@@ -95,6 +152,7 @@
       text-decoration: none;
       transition: color 0.3s ease;
     }
+
     footer .social-icons a:hover {
       color: #1abc9c;
     }
@@ -103,11 +161,20 @@
 <body>
 
 <header>
-  <h1>Pest Control Pricing</h1>
-  <p>Your trusted partner for pest-free living</p>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Our Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
+  <h1>Pest Control Pricing</h1>
+  <p>Your trusted partner for pest-free living</p>
+
   <h2>1. Residential Pest Control</h2>
   <table>
     <tr>
@@ -262,26 +329,25 @@
   </div>
 </main>
 
-<!-- Footer Section -->
 <footer>
-    <p>&copy; 2024 Madya Swa Nyuku Business Services (Pty) Ltd. All rights reserved.</p>
-    
-    <!-- Privacy Policy and Terms links before the registration number -->
-    <div class="footer-links">
-        <a href="privacy-policy.html">Privacy Policy</a> | 
-        <a href="terms.html">Terms</a>
-    </div>
-    
-    <p class="footer-bottom">Registration No: 2014/035541/07</p>
-    <p class="footer-bottom">We are a professional pest control company providing eco-friendly solutions to protect your home or business from harmful pests.</p>
+  <p>&copy; 2024 Madya Swa Nyuku Business Services (Pty) Ltd. All Rights Reserved.</p>
+  
+  <!-- Privacy Policy and Terms links before the registration number -->
+  <div class="footer-links">
+    <a href="privacy-policy.html">Privacy Policy</a> | 
+    <a href="terms.html">Terms</a>
+  </div>
+  
+  <p class="footer-bottom">Registration No: 2014/035541/07</p>
+  <p class="footer-bottom">We are a professional pest control company providing eco-friendly solutions to protect your home or business from harmful pests.</p>
 
-    <!-- Social Media Icons placed directly with footer text -->
-    <div class="social-icons">
-        <a href="https://www.facebook.com/profile.php?id=61570428539660&mibextid=LQQJ4d" target="_blank" class="fab fa-facebook-f"></a>
-        <a href="https://www.tiktok.com/@madyaswanyuku_bs?_t=8s7jLQ0qGSU&_r=1" target="_blank" class="fab fa-tiktok"></a>
-        <a href="https://www.instagram.com/madyaswanyuku_pest?igsh=d2U1OGowYWduY3Jz&utm_source=qr" target="_blank" class="fab fa-instagram"></a>
-        <a href="https://www.linkedin.com/company/madyswanpestcontrol" target="_blank" class="fab fa-linkedin-in"></a>
-    </div>
+  <!-- Social Media Icons placed directly with footer text -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=61570428539660&mibextid=LQQJ4d" target="_blank" class="fab fa-facebook-f"></a>
+    <a href="https://www.tiktok.com/@madyaswanyuku_bs?_t=8s7jLQ0qGSU&_r=1" target="_blank" class="fab fa-tiktok"></a>
+    <a href="https://www.instagram.com/madyaswanyuku_pest?igsh=d2U1OGowYWduY3Jz&utm_source=qr" target="_blank" class="fab fa-instagram"></a>
+    <a href="https://www.linkedin.com/company/madyswanpestcontrol" target="_blank" class="fab fa-linkedin-in"></a>
+  </div>
 </footer>
 
 </body>
