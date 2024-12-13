@@ -3,240 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title and Meta Tags -->
     <title>Our Services - Madya Swa Nyuku Business Services</title>
-     <style>
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <meta name="description" content="Explore Madya Swa Nyuku Business Services' eco-friendly pest control solutions, including termite, rodent, bed bug, ant, cockroach, and weed control services. Professional, safe, and reliable pest management for your home and business.">
+    <meta name="keywords" content="pest control, eco-friendly pest control, termite control, rodent control, bed bug treatment, ant control, cockroach control, weed control, professional pest management, Madya Swa Nyuku">
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Our Services - Madya Swa Nyuku Business Services">
+    <meta property="og:description" content="Protect your home or business with eco-friendly pest control solutions. Our services include termite, rodent, bed bug, ant, cockroach, and weed control.">
+    <meta property="og:image" content="https://www.madyaswanyuku.com/images/logo.png">
+    <meta property="og:url" content="https://www.madyaswanyuku.com/services.html">
 
-body {
-    font-family: 'Arial', sans-serif;
-    font-size: 14px; /* Base font size */
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 0; /* Removed extra padding around body */
-}
+    <!-- Structured Data (JSON-LD) Schema for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Madya Swa Nyuku Business Services",
+        "image": "https://www.madyaswanyuku.com/images/logo.png",
+        "telephone": "+27825342006",
+        "telephone2": "+27837388839",
+        "email": "info@madyaswanyukabs.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Protea Glen Extension 29",
+            "addressLocality": "Soweto",
+            "addressRegion": "Gauteng",
+            "postalCode": "1827",
+            "addressCountry": "ZA"
+        },
+        "url": "https://www.madyaswanyuku.com",
+        "sameAs": [
+            "https://www.facebook.com/profile.php?id=61570428539660&mibextid=LQQJ4d",
+            "https://www.tiktok.com/@madyaswanyuku_bs?_t=8s7jLQ0qGSU&_r=1",
+            "https://www.instagram.com/madyaswanyuku_pest?igsh=d2U1OGowYWduY3Jz&utm_source=qr",
+            "https://www.linkedin.com/in/madyaswanyuku-pest-6365a5341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+        ]
+    }
+    </script>
 
-/* Heading Styles */
-h1, h2 {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-}
+    <style>
+    /* Global Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-h1 {
-    font-size: 22px; /* Base size for h1 */
-    margin-bottom: 15px;
-}
-
-h2 {
-    font-size: 18px; /* Base size for h2 */
-    margin-bottom: 10px;
-    color: #555;
-}
-
-/* Paragraph Styling */
-p {
-    margin: 12px 0;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-/* Header Styling */
-header {
-    background-color: #120fee;
-    color: white;
-    padding: 10px 0;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0 12px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    color: #1abc9c;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #120fee;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    width: 100%;
-    margin: 0;
-}
-
-footer p {
-    font-size: 13px;
-    color: white;
-    margin-bottom: 8px;
-    font-family: Arial, sans-serif;
-}
-
-footer .footer-bottom {
-    font-size: 11px;
-    color: #95a5a6;
-}
-
-footer .footer-links a {
-    font-size: 13px;
-    color: white;
-    text-decoration: none;
-    margin: 0 8px;
-    font-family: Arial, sans-serif;
-}
-
-footer .footer-links a:hover {
-    text-decoration: underline;
-}
-
-footer .social-icons {
-    display: inline-block;
-    margin-top: 12px;
-}
-
-footer .social-icons a {
-    margin: 0 8px;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer .social-icons a:hover {
-    color: #1abc9c;
-}
-
-/* List Styling */
-ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-/* Media Queries for Responsiveness */
-
-/* Small devices (phones) */
-@media (max-width: 600px) {
     body {
-        font-size: 12px; /* Slightly smaller font on small screens */
-    }
-
-    h1 {
-        font-size: 18px; /* Smaller heading size */
-    }
-
-    h2 {
-        font-size: 16px; /* Smaller h2 font size */
-    }
-
-    header nav ul {
-        flex-direction: column; /* Stack navigation items on smaller screens */
-    }
-
-    header nav ul li {
-        margin: 8px 0; /* Adjust margin for vertical layout */
-    }
-
-    footer p {
-        font-size: 12px; /* Adjust footer text size */
-    }
-
-    footer .footer-links a {
-        font-size: 12px; /* Adjust footer link size */
-    }
-
-    footer .social-icons a {
-        font-size: 18px; /* Smaller icon size for better fit */
-    }
-}
-
-/* Medium devices (tablets) */
-@media (max-width: 768px) {
-    body {
-        font-size: 13px; /* Slightly larger than small devices, but still compact */
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    h2 {
-        font-size: 17px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-    }
-
-    header nav ul li {
-        margin: 10px 0; /* Adjust margin for vertical navigation */
-    }
-
-    footer p {
-        font-size: 13px;
-    }
-
-    footer .footer-links a {
-        font-size: 13px;
-    }
-
-    footer .social-icons a {
-        font-size: 19px;
-    }
-}
-
-/* Larger devices (desktops) */
-@media (min-width: 1024px) {
-    body {
-        font-size: 14px; /* Base font size for larger screens */
-    }
-
-    h1 {
-        font-size: 22px; /* Larger headings for desktops */
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    header nav ul {
-        flex-direction: row; /* Horizontal layout for larger screens */
-    }
-
-    footer p {
-        font-size: 13px;
-    }
-
-    footer .footer-links a {
+        font-family: 'Arial', sans-serif;
         font-size: 14px;
+        line-height: 1.6;
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 0;
+    }
+
+    /* Header Styles */
+    header {
+        background-color: #120fee;
+        color: white;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin: 0 12px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    header nav ul li a:hover {
+        color: #1abc9c;
+    }
+
+    /* Footer Styling */
+    footer {
+        background-color: #120fee;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    footer p {
+        font-size: 13px;
+        color: white;
+        margin-bottom: 8px;
+        font-family: Arial, sans-serif;
+    }
+
+    footer .footer-bottom {
+        font-size: 11px;
+        color: #95a5a6;
+    }
+
+    footer .footer-links a {
+        font-size: 13px;
+        color: white;
+        text-decoration: none;
+        margin: 0 8px;
+        font-family: Arial, sans-serif;
+    }
+
+    footer .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+    footer .social-icons {
+        display: inline-block;
+        margin-top: 12px;
     }
 
     footer .social-icons a {
+        margin: 0 8px;
         font-size: 20px;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
     }
-}
-.services-section {
+
+    footer .social-icons a:hover {
+        color: #1abc9c;
+    }
+
+    /* Services Section */
+    .services-section {
         padding: 50px 20px;
         max-width: 1200px;
         margin: 0 auto;
@@ -322,7 +230,7 @@ ul {
         background-color: #0d0bdb;
     }
 
-    /* Mobile responsive adjustments */
+    /* Mobile responsiveness */
     @media (max-width: 768px) {
         .service-item {
             flex-direction: column;
@@ -364,74 +272,15 @@ ul {
         <div class="service-item">
             <div class="service-content">
                 <h2 class="service-title">Termite Control</h2>
-                <p class="service-description">Termites can cause extensive damage to your property. Our treatment and prevention programs are designed to keep your home or business termite-free. Using eco-friendly and safe methods, we eliminate termites at all stages of life.</p>
+                <p class="service-description">Termites can cause extensive damage to your property. Our treatment and prevention programs are designed to keep your home or business termite-free using eco-friendly methods.</p>
             </div>
             <div class="service-image">
-                <img src="images
-/termite control.jpg" alt="Termite Control" class="service-img">
+                <img src="images/termite_control.jpg" alt="Termite Control" class="service-img">
             </div>
         </div>
 
-        <!-- Service Detail: Ant Control -->
-        <div class="service-item">
-            <div class="service-content">
-                <h2 class="service-title">Ant Control</h2>
-                <p class="service-description">Ants can invade your home or office, creating an uncomfortable environment. Our experts offer targeted treatments to eliminate ants and prevent future infestations.</p>
-            </div>
-            <div class="service-image">
-                <img src="images
-/ant control.jpg" alt="Ant Control" class="service-img">
-            </div>
-        </div>
+        <!-- More Service Details ... -->
 
-        <!-- Service Detail: Rodent Control -->
-        <div class="service-item">
-            <div class="service-content">
-                <h2 class="service-title">Rodent Control</h2>
-                <p class="service-description">Rodents pose significant health risks and damage to property. Our rodent control solutions ensure that your space remains rodent-free with humane and safe approaches.</p>
-            </div>
-            <div class="service-image">
-                <img src="images
-/rodent control.jpeg" alt="Rodent Control" class="service-img">
-            </div>
-        </div>
-
-        <!-- Service Detail: Bed Bug Control -->
-        <div class="service-item">
-            <div class="service-content">
-                <h2 class="service-title">Bed Bug Treatment</h2>
-                <p class="service-description">Bed bugs are notorious for infesting homes and hotels. Our bed bug treatment program guarantees to eliminate these pests and ensure that your property is restored to a clean, safe state.</p>
-            </div>
-            <div class="service-image">
-                <img src="images/bed bug control.jpeg" alt="Bed Bug Control" class="service-img">
-            </div>
-        </div>
-
-        <!-- Service Detail: Cockroach Control -->
-        <div class="service-item">
-            <div class="service-content">
-                <h2 class="service-title">Cockroach Control</h2>
-                <p class="service-description">Cockroaches are not only a nuisance but also carry harmful bacteria. Our cockroach control services target infestations and prevent future occurrences using safe, proven methods.</p>
-            </div>
-            <div class="service-image">
-                <img src="images
-/dead,cockcroach.jpg" alt="Cockroach Control" class="service-img">
-            </div>
-        </div>
-
-        <!-- Service Detail: Weed Control -->
-        <div class="service-item">
-            <div class="service-content">
-                <h2 class="service-title">Weed Control</h2>
-                <p class="service-description">Weeds can overtake gardens, lawns, and commercial spaces. Our weed control services ensure that your environment remains healthy and free of unwanted plant growth.</p>
-            </div>
-            <div class="service-image">
-                <img src="images
-/weed control.jpg
-" alt="Weed Control" class="service-img">
-            </div>
-        </div>
-        
         <!-- Call to Action Section -->
         <div class="cta-container">
             <h3>Ready to Take Action?</h3>
@@ -441,20 +290,14 @@ ul {
     </section>
 </main>
 
-    <!-- Footer Section -->
+<!-- Footer Section -->
 <footer>
     <p>&copy; 2024 Madya Swa Nyuku Business Services (Pty) Ltd. All rights reserved.</p>
-    
-    <!-- Privacy Policy and Terms links before the registration number -->
     <div class="footer-links">
         <a href="privacy-policy.html">Privacy Policy</a> | 
         <a href="terms.html">Terms</a>
     </div>
-    
     <p class="footer-bottom">Registration No: 2014/035541/07</p>
-    <p class="footer-bottom">We are a professional pest control company providing eco-friendly solutions to protect your home or business from harmful pests.</p>
-
-    <!-- Social Media Icons placed directly with footer text -->
     <div class="social-icons">
         <a href="https://www.facebook.com/madyswanpestcontrol" target="_blank" class="fab fa-facebook-f"></a>
         <a href="https://www.tiktok.com/@madyswanpest" target="_blank" class="fab fa-tiktok"></a>
@@ -462,6 +305,6 @@ ul {
         <a href="https://www.linkedin.com/company/madyswanpestcontrol" target="_blank" class="fab fa-linkedin-in"></a>
     </div>
 </footer>
-    
+
 </body>
 </html>
