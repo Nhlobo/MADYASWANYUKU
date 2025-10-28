@@ -1,0 +1,7 @@
+# Allow all search engines to crawl the website
+User-agent: *
+Disallow: /private/   # Block any private folders if needed; remove if not used
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.madyaswanyuku.com/sitemap.xml
