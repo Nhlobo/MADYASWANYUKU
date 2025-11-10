@@ -523,6 +523,14 @@ footer .social-icons a:hover {
             }
         });
     </script>
+
+  <script>
+const heroVideo = document.querySelector('.hero video');
+
+heroVideo.addEventListener('canplaythrough', () => {
+    heroVideo.style.opacity = 1;
+});
+  </script>
  
     <!-- Our Services Overview -->
     <section class="overview">
