@@ -472,36 +472,7 @@ ul {
     }
 }
 
-         /* Hide WhatsApp icon by default */
-.whatsapp-icon {
-    position: fixed;
-    bottom: 150px;
-    right: 150px;
-    display: none; /* Initially hidden */
-    z-index: 1000;
-}
-
-.whatsapp-icon img {
-    width: 130px; /* Adjust the icon size */
-    height: 130px;
-}
-
-.hidden {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .whatsapp-icon img {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    .whatsapp-icon img {
-        width: 35px;
-        height: 35px;
-    }
+         
     .contact-info {
       margin-bottom: 20px;
     }
@@ -670,37 +641,7 @@ ul {
         }
     </script>
 
-     </script>
-   <!-- WhatsApp Icon Section -->
-    <section id="whatsapp-icon-section">
-        <a href="https://wa.me/0825342006" id="whatsAppIcon" class="whatsapp-icon" target="_blank">
-            <img src="images/whatsapp-icon.png" alt="WhatsApp Icon">
-        </a>
-    </section>
-
-    <!-- JavaScript -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-    const whatsAppIcon = document.getElementById("whatsAppIcon");
-
-    // Function to check if user has scrolled near the footer
-    function checkTriggerPoint() {
-        const scrollPosition = window.scrollY + window.innerHeight; // Bottom of the viewport
-        const triggerPoint = document.body.offsetHeight - 300; // 300px above the bottom
-        return scrollPosition >= triggerPoint;
-    }
-
-    // Event listener for scrolling
-    window.addEventListener("scroll", () => {
-        if (checkTriggerPoint()) {
-            whatsAppIcon.style.display = "block"; // Show the WhatsApp icon
-        } else {
-            whatsAppIcon.style.display = "none"; // Hide the WhatsApp icon
-        }
-    });
-});
- </script>
-
+     
     <section id="contact-section">
     <div class="contact-info">
       <h2>Contact Us</h2>
